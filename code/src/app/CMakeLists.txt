@@ -1,0 +1,5 @@
+include_directories(${CMAKE_SOURCE_DIR}/include)
+add_executable(run_app run_app.cpp)
+SET_TARGET_PROPERTIES(run_app PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${COMMON_RUNTIME_OUTPUT_DIRECTORY}")
+target_link_libraries(run_app money)
+install_programs(/bin FILES run_app)

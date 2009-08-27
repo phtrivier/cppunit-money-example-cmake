@@ -19,10 +19,21 @@ SET(COMMON_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/libs")
 
 # -------------------------
 
+# Usefull to get CPPUNIT ...
+# I would love to find a way to have cppunit
+# only required for builds where unit test make sense ...
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
+FIND_PACKAGE(CPPUNIT REQUIRED)
+
+# -------------------------
+
 # Tell CMake to process the sub-directories
 add_subdirectory(src)
 add_subdirectory(include)
 
 add_subdirectory(src_test)
 add_subdirectory(include_test)
+
+# -------------------------
+
 
