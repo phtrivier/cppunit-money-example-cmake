@@ -2,3 +2,4 @@
 #*
 *.so
 build/*
+semantic.cache
