@@ -1,4 +1,5 @@
 include_directories(${CMAKE_SOURCE_DIR}/include)
-add_executable(hello hello.c)
-target_link_libraries(hello yo)
-install_programs(/bin FILES hello)
+add_executable(run_tests run_tests.cpp)
+#target_link_libraries(hello yo)
+target_link_libraries(run_tests money money-test cppunit)
+install_programs(/bin FILES run_tests)
