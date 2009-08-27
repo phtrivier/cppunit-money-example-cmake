@@ -1,4 +1,6 @@
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 # Tell CMake to build a shared library from
 # yo.c
 ADD_LIBRARY(money SHARED Money.cpp)

@@ -1,2 +1,2 @@
 // Pretty stupid since there is nothing in the file ... anyway ...
-#include "Money.h"
+#include "Money.hpp"
