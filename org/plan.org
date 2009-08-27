@@ -1,0 +1,62 @@
+* Yet another ray caster.
+
+Yeah, I have to make my ray caster.
+
+In *sight* C++.
+
+I know, I should probably try something in D, plain old C, python,
+lua, or anything.  But if I want to make something at least slighly
+realistic, I had better use this opportunity to brush up my C++ skills.
+
+** Idea
+
+Using http://www.permadi.com/tutorial/raycast/rayc1.html#INTRODUCTION,
+be able to create a sort-of Wolfenstein3D-like.
+I don't give a damn about the theme, about making a lot of levels, etc...
+
+Heck, I actually don't give a damn about ennemies !! If I cannot kill people,
+that's find my me. I had rather make it a ray-traced adventure game (sort
+of a point and click, if you like).
+
+** Steps
+
+*** Understand the paper, and the maps.
+
+I need to be able to sketch the algorithm on paper before attempting
+to code anything. And I mean "on paper". Drawing helps a lot.
+
+*** Prepare a c++ project with Cmake, put it on github
+
+I am not going to revolutionnarize the world of games with this, so
+I might as well make it public.
+
+*** Set up unit testing, profiling, and delivering
+
+Hey, it's *me* coding. And I've never used valgrind or stuff like
+that, which is a shame
+
+*** Iterations ...
+
+**** Iteration 1 : model the world
+
+Whatever is minimally needed. Optionnaly, a basic editor for the levels.
+(Or let the levels be text files for the moment ... or use lua scripting to
+load an existing structure ?)
+
+**** Iteration 2 : show a bit of the world
+
+That's the hard part. I need to be able to get a view of the world, without moving.
+
+First, the walls. Then the floor and Ceiling. Plain colors, no texture mapping.
+
+**** Iteration 3 : move
+
+Input loop, move me around.
+
+**** Texture mapping
+
+Make it nicer.
+
+*** Say it's done
+
+Cause I'm *not* trying to make a game, just a quick learning exercice.

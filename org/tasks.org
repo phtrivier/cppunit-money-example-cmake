@@ -1,0 +1,10 @@
+* Model the world
+
+** Map of cubes, either an empty cube or a wall_type (integers)
+
+* Constants
+
+** FOV, size of a block, size of the user, etc...
+** Size of the projection plane
+** Distance from player to projection plane
+
