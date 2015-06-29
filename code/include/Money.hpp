@@ -8,7 +8,7 @@ class Money
 public:
   Money( double amount, std::string currency )
     : m_amount( amount )
-    , m_currency( m_currency )
+    , m_currency( currency )
   {
   }
 
