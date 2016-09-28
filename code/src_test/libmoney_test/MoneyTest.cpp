@@ -21,14 +21,14 @@ MoneyTest::tearDown()
 void
 MoneyTest::testConstructor()
 {
-  // // Set up
-  // const std::string currencyFF( "FF" );
-  // const double longNumber = 12345678.90123;
+  // Set up
+  const std::string currencyFF( "FF" );
+  const double longNumber = 12345678.90123;
 
-  // // Process
-  // Money money( longNumber, currencyFF );
+  // Process
+  Money money( longNumber, currencyFF );
 
-  // // Check
-  // CPPUNIT_ASSERT_EQUAL( longNumber, money.getAmount() );
-  // CPPUNIT_ASSERT_EQUAL( currencyFF, money.getCurrency() );
+  // Check
+  CPPUNIT_ASSERT_EQUAL( longNumber, money.getAmount() );
+  CPPUNIT_ASSERT_EQUAL( currencyFF, money.getCurrency() );
 }
